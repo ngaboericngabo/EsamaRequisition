@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+   <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3307/requisition</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">root</property>
+ <!-- <property name="hbm2ddl.auto">update</property>-->
+     <property name="hibernate.show_sql">true</property>
+      
+    <mapping class="computer.zone.domain.UserCategory" />
+     <mapping class="computer.zone.domain.Users" />
+     <mapping class="computer.zone.domain.ApprovalLevel" />
+     <mapping class="computer.zone.domain.ApprovalRouting" />
+     
+     <mapping class="computer.zone.domain.JourneyInfo" />
+     <mapping class="computer.zone.domain.Departement" />
+     <mapping class="computer.zone.domain.LoginHistoric" />
+
+     <mapping class="computer.zone.domain.Requisition" />
+     <mapping class="computer.zone.domain.TypeOfRequest" />
+     <mapping class="computer.zone.domain.Vehicle" />
+     <mapping class="computer.zone.domain.NotifyRequester" />
+     <mapping class="computer.zone.domain.NotifyTransportOfficer" />
+  
+ 
+  </session-factory>
+</hibernate-configuration>
