@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- *
+ *Eric
  * @author RTAP4
  */
 @WebServlet(name = "validTest", urlPatterns = {"/validTest"})
