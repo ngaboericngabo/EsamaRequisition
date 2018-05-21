@@ -73,6 +73,6 @@ MyValidation valid=new MyValidation();
          response.sendRedirect("index_2.jsp");
        
     }
-
+//hello
  
 }
